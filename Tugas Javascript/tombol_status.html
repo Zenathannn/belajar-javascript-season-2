@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="judul">status : Aktif</h1>
+
+
+    <p id="status">
+        Nama : I'zas Bisma Arya Cetta <br>
+        NO Absen : 11 <br>
+        Kelas : XI RPL 1
+    </p>
+
+    <button onclick="aktip()">Aktif</button>
+    <button onclick="nonaktip()">Non Aktif</button>
+
+    <script>
+        function aktip() {
+            document.getElementById("judul").innerHTML = "Status : Aktif";
+            document.getElementById("judul").style.color = "green";
+            document.getElementById("status").style.display = "block";
+        }
+
+        function nonaktip() {
+            document.getElementById("judul").innerHTML = "Status : Non Aktif";
+            document.getElementById("judul").style.color = "red";
+            document.getElementById("status").style.display = "none";
+        }
+
+        aktip();
+    </script>
+</body>
+
+</html>

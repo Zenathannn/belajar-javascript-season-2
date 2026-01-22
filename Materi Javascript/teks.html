@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="judul">Pandu Judol</h1>
+    <button onclick="ubahTeks()" id="btn">Ubah Teks</button>
+
+    <script>
+        function ubahTeks() {
+            document.getElementById("judul").innerHTML = "Pandu Tobat";
+            document.getElementById("judul").style.color = "red";
+            document.getElementById("judul").style.fontSize = "90px";
+            document.getElementById("judul").style.display = "none"
+
+        }
+
+        function button() {
+            document.getElementById("btn").innerHTML = "Pandu Judol";
+            document.getElementById("judul").style.color = "black";
+            document.getElementById("judul").style.fontSize = "20px";
+            document.getElementById("judul").style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>
