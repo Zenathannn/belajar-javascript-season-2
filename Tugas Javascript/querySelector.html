@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>BIODATA</h1>
+
+    <p id="data">
+        Nama : Izas Bisma Arya Cetta <br>
+        Kelas : XI RPL 1 <br>
+        Absen : 11
+    </p>
+
+    <button onclick="tampil()">Tampilkan</button>
+    <button onclick="sembunyi()">Sembunyikan </button>
+
+    <script>
+        function tampil() {
+            let data = document.querySelector('#data');
+            data.style.display = "block";
+        }
+
+        function sembunyi() {
+            let data = document.querySelector('p#data');
+            data.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
